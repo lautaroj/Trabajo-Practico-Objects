@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+
+    var programming = 
+    {
+    languages: ["Pyton", "Javascript", "React"],
+    isCompetition: true,
+    isStart: true,
+    difficulty: 8,
+    site: "https://gitlab.com/victorchalian/training-javascript"
+    };
+
+    //1 Escriba un comando que incluya el lenguaje “Go” al final del array lenguages
+    programming.languages.push("Go");
+
+    //2 Modifica el valor de difficulty al valor de 8
+    programming.difficulty = 8;
+
+    //3 Remové la key site del objeto programming
+    delete programming.site;
+
+    //4 Agregá una nueva key llamada isFun con el valor true al objeto programming
+    programming.isFun = true;
+
+    //5 Mostrá por consola el contenido de lenguages
+    console.log(programming.languages.toString());
+
+    //6 Mostrá por consola todas las key del objeto programming
+    console.log(Object.keys(programming).toString());
+
+    //7 Mostrá por consola todos los value del objeto programming
+    console.log(Object.values(programming).toString());
+    
+</script>
+
+</body>
+</html>
